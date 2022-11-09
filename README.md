@@ -15,17 +15,19 @@ Prototype configuration for nix-bitcoin deployment and runtime on NixOS
 
 ### ISO install
 
-| Environment | Version | HowTo |
-|-------------|---------|-------|
-| GDE | GNOME, x86_64 CPU | https://nixos.org/download.html#nixos-iso |
-| GDE | Plasma Desktop, x86_64 CPU | https://nixos.org/download.html#nixos-iso |
-| CLI | x86_64 CPU | https://channels.nixos.org/nixos-22.05/latest-nixos-minimal-x86_64-linux.iso |
-| CLI | x86 CPU | https://channels.nixos.org/nixos-22.05/latest-nixos-minimal-i686-linux.iso |
+| Environment | Version | Architecture | Image |
+|-------------|---------|-------|--------|
+| GDE | GNOME | x86_64 |  https://channels.nixos.org/nixos-22.05/latest-nixos-gnome-x86_64-linux.iso |
+| GDE | Plasma Desktop | x86_64 | https://channels.nixos.org/nixos-22.05/latest-nixos-plasma5-x86_64-linux.iso |
+| CLI | 64-bit | x86_64 | https://channels.nixos.org/nixos-22.05/latest-nixos-minimal-x86_64-linux.iso |
+| CLI | 32-bit | x86 | https://channels.nixos.org/nixos-22.05/latest-nixos-minimal-i686-linux.iso |
+| GDE | GNOME | AArch64 | https://nixos.wiki/wiki/NixOS_on_ARM/Raspberry_Pi_4 |
 
 ### OVA template deployment
 
+https://nixos.org/download.html#nixos-virtualbox
 
 ### vpsfree.cz deployment
 
-[NixOS on vpsfree.cz](https://kb.vpsfree.cz/navody/distribuce/nixos)
-[nixops with vpsfree.cz](https://kb.vpsfree.cz/navody/vps/vpsadminos/nixops)
+1. [NixOS on vpsfree.cz](https://kb.vpsfree.cz/navody/distribuce/nixos)
+2. [nixops with vpsfree.cz](https://kb.vpsfree.cz/navody/vps/vpsadminos/nixops)
