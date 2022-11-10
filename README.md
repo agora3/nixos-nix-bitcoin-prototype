@@ -28,6 +28,7 @@ Prototype nix-bitcoin deployment and runtime on NixOS agnostically
 1. Download [OVA template](https://channels.nixos.org/nixos-22.05/latest-nixos-x86_64-linux.ova)
 2. Import it to VirtualBox
 3. Start the VM
+4. `nix-env -i git`
 
 ### vpsfree.cz deployment
 
@@ -48,13 +49,13 @@ wip
 
 wip
 
-2. Clone `nix-bitcoin` and create either NixOS container or QEMU VM
+2. Clone `nix-bitcoin` and create either NixOS container or QEMU VM (unprivileges account)
 
 <code>
 git clone https://github.com/fort-nix/nix-bitcoin<br>
 cd nix-bitcoin/examples/<br>
-nix-shell<br>
-./deploy-container.sh
+sudo sysctl -w net.ipv4.ip_forward=1<br>
+sudo bash ./deploy-container.sh<br>
 </code>
 
 ## Backlog
