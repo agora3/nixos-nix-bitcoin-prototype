@@ -51,12 +51,10 @@ wip
 
 2. Clone `nix-bitcoin` and create either NixOS container or QEMU VM (unprivileges account)
 
-<code>
-git clone https://github.com/fort-nix/nix-bitcoin<br>
-cd nix-bitcoin/examples/<br>
-sudo sysctl -w net.ipv4.ip_forward=1<br>
-sudo bash ./deploy-container.sh<br>
-</code>
+        git clone https://github.com/fort-nix/nix-bitcoin
+        cd nix-bitcoin/examples/
+        sudo sysctl -w net.ipv4.ip_forward=1
+        sudo bash ./deploy-container.sh
 
 ## Backlog
 
